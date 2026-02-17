@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#div1, #para3{
+			background: cyan;
+		}
+
+		div > p{
+			border: 1px solid #000;
+		}
+
+		div + p{
+			text-decoration: line-through;
+		}
+
+		input[type="email"], input[type="password"]{
+			width: 400px;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Dolores molestiae suscipit obcaecati blanditiis ducimus error officiis amet harum atque quos eligendi autem dicta enim dolore facere odit, tempora explicabo sit!
+	</div>
+	<div>
+		<h1>Lorem, ipsum dolor sit.</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nulla?
+		</p>
+	</div>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolore quae saepe expedita ut modi?
+	</p>
+	<p id="para3">
+		Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Magni repellat, nesciunt aspernatur minus totam blanditiis impedit facilis est.
+	</p>
+
+	<form action="">
+		<label for="">Email</label><br>
+		<input type="email"><br>
+		<label for="">Mot de passe</label><br>
+		<input type="password"><br>
+		<input type="submit" value="Se connecter">
+
+	</form>
+</body>
+</html>
