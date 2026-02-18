@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		section{
+			/*border: 10px solid #000;
+			border: 10px dotted #000;
+			border: 10px dashed #000;
+			border: 10px double #000;
+			border: 10px inset #000;
+			border: 10px outset #000;*/
+			border: 10px groove red;
+			margin: 20px;
+			/*padding: 10px 0px 30px 50px;*/
+			padding-left: 50px;
+
+		}
+
+		span{
+			border-bottom: 1px solid #000;
+		}
+
+		input{
+			border-width: 10px;
+			border-style: solid;
+			border-color: cyan;
+		}
+
+		#custom{
+			border: 5px solid black;
+			width: 200px;
+			text-align: center;
+			margin: auto;
+			background: purple;
+			color: yellow;
+			transition: 3s;
+			border-radius: 20px 0px 20px 0px;
+			padding: 10px;
+			margin-top: 40px;
+			/*transform: rotate(45deg);*/
+		}
+
+		#custom:hover{
+			background: yellow;
+			color: purple;
+			/*padding: 15px;*/
+			transform: rotate(-90deg);
+			cursor: move;
+		}
+	</style>
+</head>
+<body>
+	<input type="text">
+	<section>
+		Lorem, ipsum, dolor sit amet consectetur adipisicing elit.
+	</section>
+	<span>
+		Lorem ipsum dolor sit amet.
+	</span>
+
+	<div id="custom">Personnalisation</div>
+
+</body>
+</html>
