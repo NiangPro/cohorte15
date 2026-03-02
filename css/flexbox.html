@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#cadres{
+			border: 5px solid #000;
+			width: 800px;
+			height: 500px;
+			margin: auto;
+			/*overflow: scroll;
+			overflow: hidden;*/
+			display: flex;
+			/*flex-direction: row;
+			flex-direction: row-reverse;
+			flex-direction: column-reverse;
+			flex-direction: column;
+			justify-content: start;
+			justify-content: end;
+			justify-content: center;
+			justify-content: space-between;
+			justify-content: space-evenly;
+			justify-content: space-around;
+			column-gap: 35px;
+			row-gap: 40px;*/
+			gap: 40px;
+			flex-wrap: wrap;
+		}
+		.card{
+			border: 1px solid #000;
+			width: 200px;
+			height: 200px;
+			font-size: 42px;
+			font-weight: bold;
+			text-align: center;
+			padding-top: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="cadres">
+		<div class="card">1</div>
+		<div class="card">2</div>
+		<div class="card">3</div>
+		<div class="card">4</div>
+		<div class="card">5</div>
+	</div>
+</body>
+</html>
