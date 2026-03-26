@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <title>Card bootstrap</title>
+    
+</head>
+<body>
+    <!-- navigation -->
+   <nav class="navbar navbar-expand-lg navbar-light" style="background: purple;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Cohorte <span class="text-warning">15</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Apropos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Formations
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+        </li> -->
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+        <button class="btn btn-outline-success bg-warning text-dark" type="submit">Rechercher</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <!-- card bootstrap -->
+    <div class="card col-md-8 m-auto mt-5">
+        <div class="card-header">
+            <div class="row">
+                <h2  class="col-md-8"> Liste des apprenants</h2>
+                <span class="col-md-4">
+                    <a href="" class="btn btn-success float-end">Ajouter</a>
+                </span>
+            </div>
+        </div>
+        <div class="card-body">
+             <div>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <th>#</th>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john.doe@example.com</td>
+                            <td>
+                                <a href="" class="btn btn-primary">Modifier</a>
+                                <a href="" class="btn btn-danger">Supprimer</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Jane</td>
+                            <td>Doe</td>
+                            <td>jane.doe@example.com</td>
+                            <td>
+                                <a href="" class="btn btn-primary">Modifier</a>
+                                <a href="" class="btn btn-danger">Supprimer</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Bob</td>
+                            <td>Smith</td>
+                            <td>bob.smith@example.com</td>
+                            <td>
+                                <a href="" class="btn btn-primary">Modifier</a>
+                                <a href="" class="btn btn-danger">Supprimer</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row m-auto mt-5">
+            <div class="col-md-3">
+                <div class="card shadow border rounded-4">
+                    <div class="card-body mt-2 mb-6 m-auto">
+                        <h2 class="text-info m-auto text-center">+15 000</h2>
+                        <p class="text-secondary">Etudiants formes et inseres</p>
+                        <div class="m-auto" style="width: 40px; height: 5px; background: rgb(94, 225, 100);"></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow border rounded-4">
+                    <div class="card-body mt-2 mb-6 m-auto">
+                        <h2 class="text-info m-auto text-center">+80</h2>
+                        <p class="text-secondary">Etudiants formes et inseres</p>
+                        <div class="m-auto" style="width: 40px; height: 5px; background: rgb(223, 230, 10);"></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow border rounded-4">
+                    <div class="card-body mt-2 mb-6 m-auto">
+                        <h2 class="text-info m-auto text-center">+20</h2>
+                        <p class="text-secondary">Etudiants formes et inseres</p>
+                        <div class="m-auto" style="width: 40px; height: 5px; background: rgb(223, 230, 10);"></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow border rounded-4">
+                    <div class="card-body mt-2 mb-6 m-auto">
+                        <h2 class="text-success m-auto text-center">+95</h2>
+                        <p class="text-secondary">Etudiants formes et inseres</p>
+                        <div class="m-auto" style="width: 40px; height: 5px; background: rgb(223, 230, 10);"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap.bundle.min.js"></script>
+</body>
+</html>
