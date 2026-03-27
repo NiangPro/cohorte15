@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    
+    <nav
+        class="navbar navbar-expand-sm navbar-dark bg-success"
+    >
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-warning">E</span>pharma</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page"
+                            >Accueil</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Medicaments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Utilisateurs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Dropdown</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item" href="#"
+                                >Action 1</a
+                            >
+                            <a class="dropdown-item" href="#"
+                                >Action 2</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container col-md-8 mt-2">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <div class="row">
+                    <h2 class="col-md-10">Formulaire d'ajout medicaments</h2>
+                    <div class="col-md-2 text-end">
+                        <a href="" class="btn btn-warning">Ajout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="">Nom</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Prix</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div>
+                            <label for="">Description <span class="text-danger">*</span></label>
+                            <textarea name="" id="" class="form-control"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Date fabrication</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Date peremption</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Quantite en stock</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Image</label>
+                            <input type="file" class="form-control">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success mt-3">Ajouter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../bootstrap.bundle.min.js"></script>
+</body>
+</html>

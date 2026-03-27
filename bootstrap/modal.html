@@ -11,7 +11,92 @@
     <div class="container mt-5">
         <a href="" class="btn btn-success" title="Ajouter un produit"><i class="fa fa-plus"></i> Ajouter</a>
         <a href="" class="btn btn-primary"><i class="fa fa-edit"></i> Modifier</a>
-        <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Supprimer</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#suppression" class="btn btn-danger">
+            <i class="fa fa-trash"></i> Supprimer
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#suppression">
+        Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="suppression" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Suppression</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Êtes-vous sûr de vouloir supprimer ?
+                <form action="">
+                    <div class="mb-3">
+                        <label for="">Prenom</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Envoyer</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-danger">Annuler</button>
+                </form>
+            </div>
+            
+            </div>
+        </div>
+        </div>
+        
+        <!-- Button trigger modal -->
+        <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#modalId"
+        >
+            Launch
+        </button>
+        
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="modalId"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            Modal title
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">Add rows here</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
     </div>
 
     <script src="bootstrap.bundle.min.js"></script>
