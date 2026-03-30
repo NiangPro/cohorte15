@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body>
+    
+    <nav
+        class="navbar navbar-expand-sm navbar-dark fixed-top bg-success"
+    >
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-warning">E</span>pharma</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="accueil.html" aria-current="page"
+                            >Accueil
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="medicaments.html">Medicaments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Utilisateurs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Dropdown</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item" href="#"
+                                >Action 1</a
+                            >
+                            <a class="dropdown-item" href="#"
+                                >Action 2</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5 pt-4">
+        <div class="card">
+            <div class="card-header bg-success">
+                <div class="row">
+                    <h3 class="col-md-10 text-white">Liste des medicaments</h3>
+                    <div class="col-md-2 text-end">
+                        <a href="ajout.html" class="btn btn-warning">Ajouter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Nom</th>
+                            <th>Prix</th>
+                            <th>Description</th>
+                            <th>Date peremption</th>
+                            <th>Date fabrication</th>
+                            <th>Quantite stock</th>
+                            <th>Actions</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img width="100" height="50" src="https://www.ouagadougou.online/wp-content/uploads/2025/09/DYNAPAR-tabletas-600x600-1.jpg" alt="">
+                            </td>
+                            <td>Dynapar</td>
+                            <td>1400FCFA</td>
+                            <td>
+                                Lorem ipsum dolor sit amet
+                            </td>
+                            <td>12/05/2027</td>
+                            <td>12/05/2027</td>
+                            <td>5</td>
+                            <td>
+                                <a href="info.html" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a>
+                                <a href="" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                <a href="" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+
+</body>
+</html>
